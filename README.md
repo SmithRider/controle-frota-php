@@ -36,5 +36,11 @@ As senhas do sistema ficam _criptografadas_, e o _hash_ é gerado em cada máqui
 
 Para ter acesso ao sistema, primeiro acesso <http://localhost/index.php/login_ver_senha>, copiar o hash gerado e atualizar o campo **senha** da tabela **usuário** no banco de dados.
 
+![Hash Gerada](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/hash_gerada.png)
+
 depois disso, basta fazer o login com usuário **admin@controlefrota.net** e senha **123456**
+
+![Formulário Login](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/formulario_login.png)
+
+![Lista de Usuários Cadastrados](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/lista_usuarios.png)
 
