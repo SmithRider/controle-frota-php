@@ -240,7 +240,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (2,'Ramon Ferreira Silva','rsilva@ramonsilva.net','CC1V2nMAkpdg8TYAogLum5LIBI6KvPslMVVC9hIoNpVsoDJiqve9dy3MXrhSwrwJno7M99iGhmcdpg95IDd/1g==','2014-07-29 12:03:43',0000000001),(3,'Zé da Silva','ze@pobretao.com.br','e10adc3949ba59abbe56e057f20f883e','2014-07-03 15:31:05',0000000000);
+INSERT INTO `usuario` VALUES (2,'Administrador','admin@controlefrota.net','CC1V2nMAkpdg8TYAogLum5LIBI6KvPslMVVC9hIoNpVsoDJiqve9dy3MXrhSwrwJno7M99iGhmcdpg95IDd/1g==','2014-07-29 12:03:43',0000000001),(3,'Zé da Silva','ze@pobretao.com.br','e10adc3949ba59abbe56e057f20f883e','2014-07-03 15:31:05',0000000000);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
