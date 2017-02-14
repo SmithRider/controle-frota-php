@@ -34,7 +34,7 @@ Para configurar a conexão com o banco edite o arquivo **/application/config/dat
 
 As senhas do sistema ficam _criptografadas_, e o _hash_ é gerado em cada máquina (pelo próprio sistema).
 
-Para ter acesso ao sistema, primeiro acesso <http://localhost/index.php/login_ver_senha>, copiar o hash gerado e atualizar o campo **senha** da tabela **usuário** no banco de dados.
+Para ter acesso ao sistema, primeiro acesso <http://localhost/index.php/login/ver_senha>, copiar o hash gerado e atualizar o campo **senha** da tabela **usuário** no banco de dados.
 
 ![Hash Gerada](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/hash_gerada.png)
 
