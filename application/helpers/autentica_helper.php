@@ -16,10 +16,14 @@ function iniciar_sessao($email, $senha){
 		$ci->load->model("Usuario");
 		$usuario = $query->row(0, "Usuario");
 				
-		if($ci->encrypt->decode($usuario->senha) != $senha){			
+		/*if($ci->encrypt->decode($usuario->senha) != $senha){			
+			return false;
+		}*/
+
+		if($usuario->senha != $senha){
 			return false;
 		}
-
+		
 		date_default_timezone_set('America/Sao_Paulo');
 		$ci->db->where("id", $usuario->id);
 		$ci->db->update("usuario", array("data_ultimo_login" => date("Y-m-d H:i:s")));
