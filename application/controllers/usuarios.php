@@ -88,7 +88,7 @@ class Usuarios extends CI_Controller {
 			$this->dados = array(
 					"nome" => $this->input->post("nome"),
 					"email" => $this->input->post("email"),
-					"senha" => $this->encrypt->encode($this->input->post("senha"))
+					"senha" => $this->input->post("senha")
 			);	
 			
 			$this->load->database();					
@@ -155,7 +155,7 @@ class Usuarios extends CI_Controller {
 		}
 		else
 		{
-			$senha_atualizada = $this->encrypt->encode($this->input->post("senha"));
+			$senha_atualizada =$this->input->post("senha");
 			$this->dados = array("senha" => $senha_atualizada);	
 			
 			$this->load->database();	
@@ -239,7 +239,7 @@ class Usuarios extends CI_Controller {
 			$id = $this->input->post("id");
 			$usuario_old = $this->db->get_where("usuario", array("id" => $id))->row(0, "Usuario");
 
-			$senha_old = $this->encrypt->decode($usuario_old->senha);
+			$senha_old = $usuario_old->senha;
 
 			if($senha_old != $str){
 				$this->form_validation->set_message('senha_check', 'Senha atual invÃ¡lida');
